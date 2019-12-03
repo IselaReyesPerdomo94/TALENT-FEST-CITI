@@ -3,13 +3,16 @@ const mongoose = require('mongoose');
 const path = require('path');
 const config = require('config');
 const bodyParser = require('body-parser');
-const pino = require('express-pino-logger')();
+const cors = require("cors");
+
+require('dotenv').config()
+
 
 const app = express();
 require("dotenv").config();
 // Bodyparser Middleware
 app.use(express.json());
-
+app.use(cors());
 // DB Config
 const db = config.get('mongoURI');
 
@@ -27,23 +30,32 @@ mongoose
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(pino);
 
-app.get('/api/greeting', (req, res) => {
-    const name = req.query.name || 'World';
-    res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
-});
 
-// Serve static assets if in production
-// if (process.env.NODE_ENV === 'production') {
-// Set static folder
-//   app.use(express.static('client/build'));
+// app.get('/api/greeting', (req, res) => {
+//     const name = req.query.name || 'World';
+//     res.setHeader('Content-Type', 'application/json');
+//     res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
+// });
 
-//   app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-//   });
-// }
+// serves the built version of your react app
+app.use(express.static(path.join(__dirname, 'client/build')))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'))
+})
+
+// for your REST calls, append api to the beginning of the path
+// ex: 
+app.get('/api/users', async (req, res) => {
+  try {
+    res.json(await User.find())
+    // Post is a mongoose schema we've defined in /models
+    // .find() is a method on the model for fetching all documents
+  } catch (err) {
+    res.json({message: err})
+
+  }
+})
 
 const port = process.env.PORT || 5000;
 
