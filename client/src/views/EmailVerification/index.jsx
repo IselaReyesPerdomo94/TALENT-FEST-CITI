@@ -35,7 +35,7 @@ const VerifyEmail = () => {
             </div>
             <footer className="footer-form">
                     <Link className="button back" to="/formulario">Anterior</Link>
-                    <Link className="button" >Siguiente</Link>
+                    <Link className="button" to="/verificar">Siguiente</Link>
                 </footer>
         </main>
     )
