@@ -32,8 +32,12 @@ class VerificarDatos extends Component {
 
                             <img src={require("../../assets/img/whatsaaap.svg")} alt="whatsapp" />
                         </a>
-                        <img src={require("../../assets/img/zoom.svg")} alt="zoom" />
-                        <img src={require("../../assets/img/Hangouts_Icon 1.svg")} alt="hangouts" className="hangouts" />
+                        <a href="https://www.zoom.us/?zcid=2235&creative=310444187720&keyword=zoom&matchtype=e&network=g&device=c&gclid=CjwKCAiArJjvBRACEiwA-Wiqqy3kMrNTuzqVEuRBvZwoXzu6Ayj-G4qWcEWFwqvHJqIu-ZXS2ocbhxoCDgoQAvD_BwE" target="_blank">
+                            <img src={require("../../assets/img/zoom.svg")} alt="zoom" />
+                        </a>
+                        <a href="https://hangouts.google.com/call/8Tqju3iDgv7cespCl4IrAEEE" target="_blank">
+                            <img src={require("../../assets/img/Hangouts_Icon 1.svg")} alt="hangouts" className="hangouts" />
+                        </a>
 
                     </div>
                     <div className="container-calendy">
