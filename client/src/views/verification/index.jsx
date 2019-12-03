@@ -25,14 +25,17 @@ class VerificarDatos extends Component {
 
 
                     <div className="container-logos">
-                        <p>Llamar ahora</p>
-                        <img src={require("../../assets/img/whatsaaap.svg")} alt="whatsapp" />
+                        <p style={{ color: "#414141", fontSize: "20px" }}>Llamar ahora</p>
+                        <a href="https://api.whatsapp.com/send?phone=[52][5580867630]" target="_blank">
+
+                            <img src={require("../../assets/img/whatsaaap.svg")} alt="whatsapp" />
+                        </a>
                         <img src={require("../../assets/img/zoom.svg")} alt="zoom" />
                         <img src={require("../../assets/img/Hangouts_Icon 1.svg")} alt="hangouts" className="hangouts" />
 
                     </div>
                     <div className="container-calendy">
-                        <p style={{ color: "#414141", fontSize: "25px" }}>Agendar una cita con tu asesor <br /> para
+                        <p style={{ color: "#414141", fontSize: "25px" }}>Agendar tu videollamada con tu asesor <br /> para
                             verificar tus datos
                         </p>
                         <a href="https://calendly.com/reyesp-isela/15min?fbclid=IwAR2DNrrEQpnSCn6kC1JPKXPUf3nLndH3MWP9EMAKhlOhT7KaDeKcChRAD50&month=2019-12" target="_blank">
