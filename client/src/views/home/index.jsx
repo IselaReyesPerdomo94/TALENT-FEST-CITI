@@ -16,12 +16,12 @@ const Home = () => {
       <div className="row">
         <img src={Personita1} alt="persona-1" />
         <div className="box-mancha">
-          <p className="text-home"> Obten tu cuenta sin necesidad de salir de casa</p>
+          <p className="text-home"> Obtén tu cuenta sin necesidad de salir de casa</p>
         </div>
       </div> 
       <div className="row">
         <div className="box-mancha-2">
-          <p className="text-home">La primera cuenta de debito con puntos premia</p>
+          <p className="text-home">La primera cuenta de débito con puntos premia</p>
         </div>
         <img src={Personita2} alt="persona-2" />
       </div>
@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <div className="billete">
         <div className="box-mancha-2">
-          <p className="text-home">Activa tu cuenta con solo $50.00</p>
+          <p className="text-home">Activa tu cuenta con solo $50.00 pesos mexicanos</p>
         </div>
           <img src={Billete} alt="persona-2"/>
       </div>

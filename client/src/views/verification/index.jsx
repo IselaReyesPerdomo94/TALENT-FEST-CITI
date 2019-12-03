@@ -23,7 +23,7 @@ class VerificarDatos extends Component {
                 <div className="container-main">
                     <div className="container-logos">
                         <p style={{ color: "#414141", fontSize: "20px" }}>Ahora un asesor va a confirmar tus datos <br />
-                          por medio de una videollamada asegúrate de tener tu identificación oficial a la mano.</p>
+                          por medio de una videollamada. Asegúrate de tener tu identificación oficial a la mano.</p>
                                 <p className="instructions">Selecciona una opción para hacer la videollamada</p>
                           <div>
                                 <a href="https://api.whatsapp.com/send?phone=[52][5580867630]" target="_blank">
@@ -40,7 +40,7 @@ class VerificarDatos extends Component {
                     </div>
                     <div className="container-calendy">
                         <p style={{ color: "#414141", fontSize: "20px" }}>Si no estas disponible en este momento <br />
-                            puedes agrendar tu videollamada en<br />
+                            puedes agendar tu videollamada en<br />
                             otra fecha con límite de un mes.
                         </p>
                         <p className="instructions">Selecciona una fecha para agendarte con tu asesor</p>

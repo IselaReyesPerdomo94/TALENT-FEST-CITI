@@ -291,7 +291,7 @@ class Form extends Component {
                         />
                     </div>
                     <Input
-                        label="Teléfono"
+                        label="Teléfono celular"
                         name="phone"
                         type="number"
                         value={this.state.phone}
@@ -307,7 +307,7 @@ class Form extends Component {
                                 <option value="PASSPORT">Pasaporte mexicano</option>
                         </select>
                         <Input
-                            label="Numero de identificación"
+                            label="Número de identificación"
                             type="number"
                             name="number_id"
                             value={this.state.number_id}
