@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import Logo from '../../assets/img/logoCiti.png';
+import { Link } from 'react-router-dom'
 import './style.css'
 
 
 
 class VerificarDatos extends Component {
-    state = {}
+
     render() {
         return (
             <Fragment>
@@ -13,7 +14,7 @@ class VerificarDatos extends Component {
                     <img src={Logo} alt="logo" />
 
                 </header>
-                <p style={{ color: "#414141", textAlign: "center", fontSize: "25px" }}>Estás a sólo un paso</p>
+                <p style={{ color: "#414141", textAlign: "center", fontSize: "20px" }}>Estás a sólo un paso</p>
                 <div className="ball-container" >
                     <span className="ball " ></span>
                     <span className="filled ball"></span>
@@ -25,7 +26,8 @@ class VerificarDatos extends Component {
 
 
                     <div className="container-logos">
-                        <p style={{ color: "#414141", fontSize: "20px" }}>Llamar ahora</p>
+                        <p style={{ color: "#414141", fontSize: "20px" }}>Ahora un asesor va a confirmar tus datos <br />
+                            por medio de una videollamada</p>
                         <a href="https://api.whatsapp.com/send?phone=[52][5580867630]" target="_blank">
 
                             <img src={require("../../assets/img/whatsaaap.svg")} alt="whatsapp" />
@@ -35,17 +37,24 @@ class VerificarDatos extends Component {
 
                     </div>
                     <div className="container-calendy">
-                        <p style={{ color: "#414141", fontSize: "25px" }}>Agendar tu videollamada con tu asesor <br /> para
-                            verificar tus datos
+                        <p style={{ color: "#414141", fontSize: "20px" }}>Si no estas disponible en este momento <br />
+                            puedes agrendar tu videollamada en<br />
+                            otra fecha con límite de un mes.
+
                         </p>
                         <a href="https://calendly.com/reyesp-isela/15min?fbclid=IwAR2DNrrEQpnSCn6kC1JPKXPUf3nLndH3MWP9EMAKhlOhT7KaDeKcChRAD50&month=2019-12" target="_blank">
                             <img src={require("../../assets/img/calendario.svg")} alt="" />
                         </a>
                     </div>
-
+                    <Link to="/" className="button-finish">
+                        Finalizar
+                        </Link>
 
                 </div>
-            </Fragment>
+
+
+
+            </Fragment >
         );
     }
 }

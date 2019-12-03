@@ -1,46 +1,57 @@
 .container-main{
-    display: flex;
-    flex-direction: row;
+display: flex;
+flex-direction: row;
+padding-bottom:3rem;
 }
 .container-logos{
-    height: 50vh;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+height: 50vh;
+width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 5rem;
 }
 .container-logos img{
-    width: 100px;
-    height: 100px;
-    padding-top: 2rem;
-
+width: 100px;
+height: 100px;
+padding-top: 2rem;
 }
-
-
-
-
 .hangouts{
-    width: 70px !important;
-    height: 70px !important;
+width: 70px !important;
+height: 70px !important;
 }
 .container-calendy{
-    height: 80vh;
-    width: 55%;
-    border-left: 2px solid #E5E5E5;
-    text-align: center;
-    padding-top: 3rem;
+height: 70vh;
+width: 55%;
+border-left: 2px solid #E5E5E5;
+text-align: center;
+padding-top: 3rem;
 }
 .container-calendy img{
-    padding-top: 2rem;  
+padding-top: 2rem;  
 }
 
 .header-form{
-    display: flex;
-    justify-content:flex-start;
+display: flex;
+justify-content:flex-start;
 }
 .ball-container {
 margin-left: 47%;
 
+}
+.button-finish{
+background: #8F9293;
+text-decoration-line: none;
+position: absolute;
+width: 8rem;
+height: 3rem;
+left: 555px;
+top:750px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+color:white;
+margin-bottom: 5rem;
 }
