@@ -36,7 +36,8 @@ class Form extends Component {
             phoneColor:false,
             ID: "",
             IDNumberColor: false,
-            CURPColor: false
+            CURPColor: false,
+            enable:false
           };
             //  This is necessary to make 'this' work in the callback
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -174,16 +175,22 @@ class Form extends Component {
                 cp:"",
                 phone:"",
                 number_id:"",
-                curp:""
-            });
+                curp:"", 
+                enable: true
+            }).then(()=>{
+                console.log('entro al then')
+                this.setState({enable: true})
+            })
             this.props.history.push("/");
           })
           .catch(err => {
             console.log("Error in CreateBook!");
           });
       };
-    
+
+      
     render() {
+        console.log(this.state.enable)
         return (
             <main className="form">
                 <header className="header-form">
@@ -335,12 +342,19 @@ class Form extends Component {
                             <option value="">Prefiero no decirlo</option>
                         </select>
                     </div>
-                    <input className="button" type="submit"/>
-                </form>
-                <footer className="footer-form">
+                    <input className="button-submit" type="submit"/>
+                    <footer className="footer-form">
                     <Link className="button back" to="/">Anterior</Link>
-                    <Link className="button" to="/verificar-correo">Siguiente</Link>
-                </footer>
+                    {
+                        this.state.enable ? <Link 
+                        to="verificar-correo" 
+                        className="button" 
+                        >Siguiente</Link> : console.log('no aparece')
+                    }
+                    
+                    </footer>
+                </form>
+                <a>Leer términos y condiciones</a>
             </main>
         );
     }

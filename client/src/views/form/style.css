@@ -17,14 +17,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 1rem auto;
 }
 
-.form section {
-    width: 50%;
+.form form {
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .drops {
@@ -53,6 +54,18 @@
     text-align: center;
     border-radius: 5px;
     background-color: #3abaed;
+}
+
+.button-submit {
+    text-align: center;
+    align-self: center;
+    border-radius: 5px;
+    background-color: #3abaed;
+    width: 10rem;
+    border: none;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
 }
 
 .back {
