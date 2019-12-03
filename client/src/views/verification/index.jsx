@@ -23,8 +23,19 @@ class VerificarDatos extends Component {
                 <div className="container-main">
                     <div className="container-logos">
                         <p style={{ color: "#414141", fontSize: "20px" }}>Ahora un asesor va a confirmar tus datos <br />
-                            por medio de una videollamada asegúrate de tener tu identificación oficial a la mano.</p>
-                            <p className="instructions">Selecciona una opción para hacer la videollamada</p>
+                          por medio de una videollamada asegúrate de tener tu identificación oficial a la mano.</p>
+                       <p className="instructions">Selecciona una opción para hacer la videollamada</p>
+                        <a href="https://api.whatsapp.com/send?phone=[52][5580867630]" target="_blank">
+                            <img src={require("../../assets/img/whatsaaap.svg")} alt="whatsapp" />
+                        </a>
+                        <a href="https://www.zoom.us/?zcid=2235&creative=310444187720&keyword=zoom&matchtype=e&network=g&device=c&gclid=CjwKCAiArJjvBRACEiwA-Wiqqy3kMrNTuzqVEuRBvZwoXzu6Ayj-G4qWcEWFwqvHJqIu-ZXS2ocbhxoCDgoQAvD_BwE" target="_blank">
+                            <img src={require("../../assets/img/zoom.svg")} alt="zoom" />
+                        </a>
+                        <a href="https://hangouts.google.com/call/8Tqju3iDgv7cespCl4IrAEEE" target="_blank">
+                            <img src={require("../../assets/img/Hangouts_Icon 1.svg")} alt="hangouts" className="hangouts" />
+                      </a>
+                            
+                           
                         <div>
                             <a href="https://api.whatsapp.com/send?phone=[52][5580867630]" target="_blank">
                                 <img src={require("../../assets/img/whatsaaap.svg")} alt="whatsapp" />
