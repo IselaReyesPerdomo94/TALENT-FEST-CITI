@@ -39,7 +39,7 @@ const Home = () => {
       </div>
       <div className="button-footer">
 
-        <Link className="button" to="/formulario">Abre tu cuenta al instante</Link>
+        <Link className="button cuenta" to="/formulario">Abre tu cuenta al instante</Link>
       </div>
       
     </main>

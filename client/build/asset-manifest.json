@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.550a41d5.chunk.css",
+    "main.js": "/static/js/main.ceb81a4c.chunk.js",
+    "main.js.map": "/static/js/main.ceb81a4c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.46c89a0a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.46c89a0a.js.map",
+    "static/js/2.bd20b0b0.chunk.js": "/static/js/2.bd20b0b0.chunk.js",
+    "static/js/2.bd20b0b0.chunk.js.map": "/static/js/2.bd20b0b0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.40feb7a55ea48ec5154922832048e64e.js": "/precache-manifest.40feb7a55ea48ec5154922832048e64e.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.550a41d5.chunk.css.map": "/static/css/main.550a41d5.chunk.css.map",
+    "static/media/1.jpg": "/static/media/1.f1c38f69.jpg",
+    "static/media/2.jpg": "/static/media/2.3ad3fbea.jpg",
+    "static/media/3.jpg": "/static/media/3.447069a6.jpg",
+    "static/media/Hangouts_Icon 1.svg": "/static/media/Hangouts_Icon 1.ce2fb731.svg",
+    "static/media/billete50.png": "/static/media/billete50.26ec2d52.png",
+    "static/media/calendario.svg": "/static/media/calendario.ea481249.svg",
+    "static/media/logoCiti.png": "/static/media/logoCiti.3ce252cf.png",
+    "static/media/whatsaaap.svg": "/static/media/whatsaaap.a67144fd.svg",
+    "static/media/zoom.svg": "/static/media/zoom.72348989.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46c89a0a.js",
+    "static/js/2.bd20b0b0.chunk.js",
+    "static/css/main.550a41d5.chunk.css",
+    "static/js/main.ceb81a4c.chunk.js"
+  ]
+}

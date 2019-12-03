@@ -49,6 +49,7 @@
     width: 10rem;
     border: none;
     padding: 1rem;
+    cursor: pointer;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -60,6 +61,7 @@
     text-align: center;
     align-self: center;
     border-radius: 5px;
+    cursor: pointer;
     background-color: #3abaed;
     width: 10rem;
     border: none;
@@ -73,7 +75,7 @@
 }
 
 .ball-container {
-    margin: 1rem;
+    margin: 1rem auto;
     display: flex;
     justify-content: space-between;
     width: 3rem;

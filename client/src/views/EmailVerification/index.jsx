@@ -24,7 +24,6 @@ const VerifyEmail = () => {
                 <span className="ball"></span>
                 <span className="filled ball"></span>
                 <span className="ball"></span>                    
-                <span className="ball"></span>
                 </div>
             <p>Se ha enviado un código de confirmación a tu correo. Por favor ingresa el código aquí</p>
             <div className="code">
@@ -35,7 +34,7 @@ const VerifyEmail = () => {
             </div>
             <footer className="footer-form">
                     <Link className="button back" to="/formulario">Anterior</Link>
-                    <Link className="button" >Siguiente</Link>
+                    <Link className="button" to="/verificar">Siguiente</Link>
                 </footer>
         </main>
     )

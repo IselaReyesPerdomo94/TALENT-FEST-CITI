@@ -90,3 +90,13 @@
     flex-direction: column;
     color: #414141;
 }
+
+.cuenta {
+    bottom: 30px;
+    right: 40px;
+    position: fixed;
+}
+
+.cuenta:hover {
+    transform: scale(1.2);
+}
