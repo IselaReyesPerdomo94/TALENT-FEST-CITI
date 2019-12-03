@@ -66,3 +66,7 @@
 .instructions {
     font-size: 0.8rem;
 }
+
+.box {
+    align-self: center;
+}

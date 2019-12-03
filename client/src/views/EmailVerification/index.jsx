@@ -24,7 +24,6 @@ const VerifyEmail = () => {
                 <span className="ball"></span>
                 <span className="filled ball"></span>
                 <span className="ball"></span>                    
-                <span className="ball"></span>
                 </div>
             <p>Se ha enviado un código de confirmación a tu correo. Por favor ingresa el código aquí</p>
             <div className="code">

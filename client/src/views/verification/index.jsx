@@ -14,14 +14,12 @@ class VerificarDatos extends Component {
                     <img src={Logo} alt="logo" />
 
                 </header>
-                <p style={{ color: "#414141", textAlign: "center", fontSize: "20px" }}>Estás a sólo un paso</p>
-                <div className="ball-container" >
-                    <span className="ball " ></span>
-                    <span className="ball"></span>
-                    <span className="ball"></span>
-                    <span className="filled ball"></span>
-
-                </div>
+                <p style={{ color: "#414141", textAlign: "center", fontSize: "20px" }}>Validación de datos</p>
+                    <div className="ball-container box" >
+                        <span className="ball " ></span>
+                        <span className="ball"></span>
+                        <span className="filled ball"></span>
+                    </div>
                 <div className="container-main">
                     <div className="container-logos">
                         <p style={{ color: "#414141", fontSize: "20px" }}>Ahora un asesor va a confirmar tus datos <br />
