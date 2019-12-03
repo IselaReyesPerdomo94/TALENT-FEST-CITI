@@ -1,0 +1,46 @@
+.container-main{
+    display: flex;
+    flex-direction: row;
+}
+.container-logos{
+    height: 50vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.container-logos img{
+    width: 100px;
+    height: 100px;
+    padding-top: 2rem;
+
+}
+
+
+
+
+.hangouts{
+    width: 70px !important;
+    height: 70px !important;
+}
+.container-calendy{
+    height: 80vh;
+    width: 55%;
+    border-left: 2px solid #E5E5E5;
+    text-align: center;
+    padding-top: 3rem;
+}
+.container-calendy img{
+    padding-top: 2rem;  
+}
+
+.header-form{
+    display: flex;
+    justify-content:flex-start;
+}
+.ball-container {
+margin-left: 47%;
+
+}
